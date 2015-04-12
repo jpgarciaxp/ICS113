@@ -1,0 +1,59 @@
+body{
+	background-color:#BBD9EE;
+	}
+	
+#page{
+	border:2px solid black;
+	}	
+
+div #header{
+	background-color:#206BA4;
+	border-bottom:2px solid black;
+	padding:30px;
+	}
+	
+div #navigation{
+	background-color:#C0C0C0;
+	border-bottom:2px solid black;
+	padding:15px;
+	text-align:center;
+	}
+
+#menu_color{
+	font-size:20px;
+	}
+	
+table{
+	background-color:#F1EFE2;
+	}
+
+#contributors{
+	border:2px solid black;
+	margin:15px;
+	background-color:white;
+	}
+	
+#contributors h3{
+	padding-left:100px;
+	padding-right:100px;
+	height:500px;
+	}
+	
+#comdesc{
+	border:2px solid black;
+	margin-right:15px;
+	margin-top:15px;
+	margin-bottom:15px;
+	background-color:white;	
+	}
+	
+#comdesc h3{
+	height:500px;
+	width:961px;
+	}
+
+	
+a{
+	text-decoration:none;
+	color:black;
+	}

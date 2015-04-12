@@ -1,0 +1,100 @@
+body{
+	background-color:#BBD9EE;
+	}
+	
+#page{
+	border:2px solid black;
+	}	
+
+div #header{
+	background-color:#206BA4;
+	border-bottom:2px solid black;
+	padding:30px;
+	}
+	
+div #navigation{
+	background-color:#C0C0C0;
+	border-bottom:2px solid black;
+	padding:15px;
+	text-align:center;
+	}
+
+table{
+	background-color:#F1EFE2;
+	}
+	
+#menu_color{
+	font-size:20px;
+	}
+
+#promo{
+	height:600px;
+	width:430px;	
+	border:2px solid black;
+	margin:15px;
+	background-color:white;
+	}
+
+#promo h3{
+	font-size:20px;
+	margin-top:250px;
+	margin-left:50px;
+}	
+
+#destinations{
+	background-color:white;
+	height:440px;
+	width:430px;	
+	border:2px solid black;
+	margin-right:15px;
+	margin-bottom:15px;
+	}
+	
+#destinations h3{
+	font-size:20px;
+	margin-top:200px;
+	margin-left:110px;
+}	
+
+#contact{
+	background-color:#EBF4FA;
+	border:2px solid black;
+	padding-right:5px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:30px;
+	margin-top:15px;
+	margin-right:15px;
+	margin-right:15px;
+	}
+
+#contact img{
+	height:30px;
+	width:30px;
+	}
+
+#login{
+	background-color:#EBF4FA;
+	width:385px;	
+	border:2px solid black;
+	margin-right:15px;
+	margin-bottom:15px;
+	margin-top:14px;
+	}
+	
+#create{
+	background-color:#EBF4FA;
+	border:2px solid black;
+	margin-right:15px;
+	margin-bottom:15px;
+	padding-left:20px;
+	height:400px;
+	padding-top:20px;
+	}
+	
+a{
+	text-decoration:none;
+	color:black;
+	}
+	
+	

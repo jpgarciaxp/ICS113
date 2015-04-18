@@ -1,0 +1,107 @@
+body{
+	background-color:#BBD9EE;
+	}
+	
+#page{
+	border:2px solid black;
+	}	
+
+div #header{
+	background-color:#206BA4;
+	border-bottom:2px solid black;
+	padding:30px;
+	}
+	
+div #navigation{
+	background-color:#C0C0C0;
+	border-bottom:2px solid black;
+	padding:15px;
+	text-align:center;
+	}
+
+#menu_color{
+	font-size:20px;
+	}
+	
+table{
+	background-color:#F1EFE2;
+	}
+	
+#map{
+	background-color:white;
+	width:700px;	
+	border:2px solid black;
+	height:500px;
+	margin-top:15px;
+	margin-left:300px;
+	margin-right:319px;
+	margin-bottom:115px;
+	}	
+	
+#map h3{
+	text-align:center;
+	}
+	
+#map a h4#dest1:hover{
+	border:2px solid black;
+	}
+	
+a{
+	text-decoration:none;
+	color:black;
+	}
+
+#map h4#popup.dest1{
+	margin-left:50px;
+	}
+	
+#map h4#popup.dest2{
+	margin-left:250px;
+	}
+
+#map h4#popup.dest3{
+	margin-left:500px;
+	}
+	
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	width: 130px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0 10px;
+	border: 1px solid #666;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#popup a span {
+	display: none;
+}
+
+#popup a:hover { 
+	background-color: #e9e9e2; 
+}
+
+/* the IE correction rule */
+#popup a:hover	{
+	color: #f00; 
+	background-color: #e9e9e2;
+	text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 170px;
+	width: 320px;
+	margin: 0px;
+	padding: 10px;
+	color: #335500;
+	font-weight: normal;
+	background: #e5e5e5;
+	text-align: left;
+	border: 1px solid #666;
+}

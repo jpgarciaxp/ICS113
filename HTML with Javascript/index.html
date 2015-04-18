@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="index.css"/>
+			<script type="text/javascript">  
+				function validateform(){  
+				var fname=document.registerform.fname.value;
+				var lname=document.registerform.lname.value;  
+				var email=document.registerform.email.value;  
+				var cp=document.registerform.cp.value;  
+				var tel=document.registerform.tel.value;  
+				var password=document.registerform.password.value;  
+				var secondpassword=document.registerform.password2.value; 
+  
+				if (fname==null || fname==""){  
+					alert("Firstname can't be blank");  
+					return false;  
+					}
+					
+				else if (lname==null || lname==""){  
+					alert("Lastname can't be blank");  
+					return false;  
+					}
+					
+				else if (email==null || email==""){  
+					alert("Email can't be blank");  
+					return false;  
+					}	
+					
+				else if (cp==null || cp==""){  
+					alert("Mobile Number can't be blank");  
+					return false;  
+					}
+					
+				else if (tel==null || tel==""){  
+					alert("Telephone Number can't be blank");  
+					return false;  
+					}
+					
+				else if (password==null || password==""){  
+					alert("Enter a Password.");  
+					return false;  
+					}
+						
+			</script>
+			<script>
+				function validate(){
+				var password=document.registerform.password;  
+				var secondpassword=document.registerform.password2; 	
+					if(password.value.length<6){  
+						document.getElementById("passloc").innerHTML="<img src='images/unchecked.gif'/>";
+						status=false;  
+					}
+					
+					else{
+						document.getElementById("passloc").innerHTML="<img src='images/checked.gif'/>";
+						status=true;
+					}
+					
+					if(password.value!=secondpassword.value){ 
+						document.getElementById("pass2loc").innerHTML="<img src='images/unchecked.gif'/>";
+						status=false;  
+						}  
+					
+					else{
+						document.getElementById("pass2loc").innerHTML="<img src='images/checked.gif'/>";
+						status=true;
+						}
+				}
+						 
+			</script>
+		<title>Company Name</title>
+	</head>
+	<body>
+	
+	<div id="page">
+		<div id="header">
+				<img src="logo.jpg" alt="Logo.png"/>
+		</div>
+		
+		<div id="navigation">
+				<a href="index.html" id="menu_color">Home |</a>&nbsp;&nbsp;&nbsp;
+				<a href="tof.html"id="menu_color">Trips/Fares |</a>&nbsp;&nbsp;&nbsp;
+				<a href="travser.html" id="menu_color">Travel Services |</a>&nbsp;&nbsp;&nbsp;
+				<a href="custser.html" id="menu_color">Customer Service |</a>&nbsp;&nbsp;&nbsp;
+				<a href="aboutus.html" id="menu_color">About Us</a>
+		</div>
+		<table>
+		<div id="body">
+			<tr>
+				<td><div id="promo"><h3>Featured Promo/Discounts Slideshow</h3></div></td>
+				<td><div id="destinations"><h3>Destinations Slideshow</h3></div>
+				<div id="contact">
+						<a href="contact.html"><img src="images/facebook_logo.png" id="pad"/> Like us on Facebook</a><br>
+						<a href="contact.html"><img src="images/email_logo.png" id="pad"/> Get Email Updates</a><br>
+						<a href="contact.html"><img src="images/twitter_logo.png" id="pad"/> Follow us on Twitter</a>
+					</ul></div>
+				</td>
+				<td>
+				<div id="login">
+					<p><center>Sign in</center></p>
+					<form method="post" action="index2.html" onsubmit="return loginform()">
+					<p><pre><center>Passenger ID: <input type="text" name="ID" class="radius"></center></pre></p>
+					<p><pre><center>Password:     <input type="password" name="password" class="radius"></center></pre></p>
+					<p><pre><center> 	      <input type="submit" value="Login" class="radius"></center></pre></p>
+					</form>
+				</div>
+				<div id="create">
+					<p><center>Create New Account</center></p>
+					<form name="registerform" method="post" action="index2.html" onsubmit="return validateform()">  
+					<p><pre><center><input type="text" placeholder="First Name" name="fname" class="radius"></span><input type="text" placeholder="Last Name" name="lname" class="radius"></center></pre></p>
+					<p><pre><center><input type="text" placeholder="Email" size="45" name="email" class="radius"><center></pre></p>
+					<p><pre><center><input type="text" placeholder="Mobile Number" size="45" name="cp" class="radius"></center></pre></p>
+					<p><pre><center><input type="text" placeholder="Telephone Number" size="45" name="tel" class="radius"></center></pre></p>
+					<p><pre>    <input type="password" placeholder="Password" size="40" name="password" class="radius" onkeyup="validate()"> <span id="passloc"></span></center></pre></p>
+					<p><pre>    <input type="password" placeholder="Confirm Password" size="40" name="password2" class="radius" onkeyup="validate()"> <span id="pass2loc"></span></center></pre></p>	
+					<p><pre>    <input type="text" name="number" id="number" placeholder="Age" name="age" class="radius">   <input type="radio" name="sex" value="male">Male</center></pre></p>
+					<p><pre>	         	       <input type="radio" name="sex" value="female">Female</pre></p>
+					<p><center><input type="submit" value="Sign up" class="radius"></center></p>
+					</form>
+				</div>
+				</td>
+			</tr>
+		</div>
+		</table>	
+	</body>
+</html>

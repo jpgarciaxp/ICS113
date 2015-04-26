@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap App</title>
+	<meta name="description" content="Bootstrap App">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+</head>
+
+	<style>
+	#my-navbar{
+		padding-top:10px;
+		}
+	.navbar-brand{
+		padding-top:5px;
+		}
+	body{
+		background-color:#7f8c8d;
+		}
+	#comdet{
+		margin-top:100px;
+		color:black;
+		border-radius:25px;
+		padding-left:70px;
+		padding-right:120px;
+		}
+	#cont{
+		margin-top:100px;
+		margin-right:100px;
+		margin-left:60px;
+		border-radius:25px;
+		padding-left:20px;
+		padding-right:20px;
+		padding-bottom:230px;
+		padding-top:20px;
+		}	
+	#cont p{
+		font-size:15px;
+		text-align:center;
+		}	
+	#comdet h2{
+		font-family:Lucida Console;
+		}
+	#comdet h4{
+		text-indent:15px;
+		}	
+	#cont img{
+		height:20px;
+		width:20px;
+		}
+	#comdet img{
+		height:200px;
+		width:200px;
+		}
+	#align{
+		text-align:justify;
+		font-size:20px;
+		}
+	@font-face {
+	  font-family: 'Glyphicons Halflings';
+	  src: url('fonts/glyphicons-halflings-regular.eot');
+	  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+		}		
+	</style>
+
+<body>
+	<!--NavBar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a href="index.html" class="navbar-brand" id="icon">
+						<img src="images/Icon.jpg"/>
+					</a>
+				</div><!-- Navbar Header--> 
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+				<a href="login.html" class="btn btn-info navbar-btn navbar-right">Login</a>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span><span> Home</span></a></li>
+						<li><a href="tof.html"><span class="glyphicon glyphicon-bed"></span><span> Trips/Fares</span></a></li>
+						<li><a href="custser.html"><span class="glyphicon glyphicon-phone-alt"></span><span> Customer Service</span></a></li>
+						<li><a href="aboutus.html"><span class="glyphicon glyphicon-eye-open"></span><span> About Us</span></a></li>
+					</ul>
+				</div>
+			</div><!-- End Container-->
+		</nav><!--End Navbar-->
+		
+		<div class="row">
+			<div id="cont" class="jumbotron col-md-3">
+				<h3><center>Contributors</center></h3><br>
+				<span><center>John Patrick Garcia and Alexavier Borais, Developers</span><br><br>
+				<span>John Patrick Garcia, Designer, Front-end Developer</span><br><br>
+				<span>Alexavier Borais, Editor, Back-end Developer</center></span><hr>
+				<br><span>Special thanks to:</span><br><br>
+				<span><img src="images/jbee.jpg" class="img-circle"/></span>
+				<span><img src="images/mcdo.jpg" class="img-circle"/></span>
+				<span><img src="images/kfc.jpg" class="img-circle"/></span>
+				<span><img src="images/711.jpg" class="img-circle"/></span>
+				<span><img src="images/sbuck.jpg" class="img-circle"/></span>
+				<span><img src="images/kk.jpg" class="img-circle"/></span>
+				<span><img src="images/ust.jpg" class="img-circle"/></span>
+			</div>
+				<div id="comdet" class="jumbotron col-md-7">
+					<center><img src="images/john.jpg" class="img-thumbnail"/>&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-thumbnail" src="images/alex.jpg"/></center><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Garcia, John Patrick (Front end)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Borais, Alexabier (Back end)<hr>
+					<p id="align">GB Express is a Bus Company to serve those who loves to travel to the wonderful places of the Philippines, Bicol, Batangas, Manila, Baguio.
+					Founded in 2015 by Garcia, John Patrick P. and Borais, Alexavier B. Two business minded people who love to travel hence collaborated to create a bus liner company for those who loves to travel and for those peope looking for someone they could trust on when it comes to transportation and travelling.</p>
+				</div>
+				
+		</div>
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="bootstrap.js"></script>
+</body>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>GB Express</title>
+	<meta name="description" content="Bootstrap App">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+</head>
+
+	<style>
+	#my-navbar{
+		padding-top:10px;
+		}
+	.navbar-brand{
+		padding-top:5px;
+		}
+	div#text{
+		margin-left:300px;
+		margin-top:-150px;
+		color:#2c3e50;
+		font-size:30px;
+		background-color:#bdc3c7;
+		border-radius:10px;
+		}
+	div#signup{
+		background-color:#ecf0f1;
+		border-radius:25px;
+		margin-top:150px;
+		margin-left:200px;
+		margin-bottom:70px;
+		margin-right:144px;
+		padding:10px;
+		}
+	body{
+		background-color:#7f8c8d;
+		}
+	table{
+		margin-top:50px;
+		}
+	#map{
+		background-image:url('images/map.jpg');
+		width:500px;	
+		border:2px solid black;
+		height:600px;
+		margin-top:60px;
+		margin-left:400px;
+		margin-bottom:115px;
+		border-radius:5px;
+		}
+	#map h3{
+		text-align:center;
+		}
+	#map h4#popup.dest1{
+		margin-left:175px;
+		margin-top:235px;
+		}	
+	#map h4#popup.dest2{
+		margin-left:215px;
+		margin-top:64px;
+		}
+	#map h4#popup.dest3{
+		margin-left:220px;
+		margin-top:76px;
+		}	
+	#map h4#popup.dest4{
+		margin-left:429px;
+		margin-top:-7px;
+		}
+	#popup a, #popup a:visited {
+		position: relative;
+		display: block;
+		width: 1px;
+		line-height: 30px;
+		text-align: center;
+		border: 5px solid blue;
+		border-radius: 1000px;
+		text-decoration: none;
+		font-size: 1em;
+		font-weight: bold;
+		}
+	#popup a span{
+		display: none;
+		}
+	#popup a:hover{ 
+		background-color: #e9e9e2; 
+		border: 5px solid red;
+		}
+	/* the IE correction rule */
+	#popup a:hover{
+		color: #f00; 
+		text-align:justify;
+		background-color: #e9e9e2;
+		text-indent: 0; /* added the default value */
+		}
+	#popup.dest1 a:hover span {
+		display: block;
+		position: absolute;
+		left: 100px;
+		top:-300px;
+		width: 220px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		padding-right:10px;
+		color: black;
+		font-size:15px;
+		font-weight: normal;
+		background: white;
+		text-align: justify;
+		border: 2px solid #666;
+		border-radius:20px;
+		}
+	#popup.dest1 a:hover span img{
+		height:200px;
+		width:200px;
+		}
+	#popup.dest2 a:hover span {
+		display: block;
+		position: absolute;
+		top: -500px;
+		left: 100px;
+		width: 220px;
+		margin: 0px;
+		padding: 10px;
+		font-size:15px;
+		color: black;
+		font-weight: normal;
+		background: white;
+		text-align: justify;
+		border: 2px solid #666;
+		border-radius:20px;
+		}
+	#popup.dest2 a:hover span img{
+		height:200px;
+		width:200px;
+		}
+	#popup.dest3 a:hover span {
+		display: block;
+		position: absolute;
+		top: -550px;
+		left: 100px;
+		font-size:15px;
+		width: 220px;
+		margin: 0px;
+		padding: 10px;
+		color: black;
+		font-weight: normal;
+		background: white;
+		text-align: justify;
+		border: 2px solid #666;
+		border-radius:20px;
+		}
+	#popup.dest3 a:hover span img{
+		height:200px;
+		width:200px;
+		}
+	#popup.dest4 a:hover span {
+		display: block;
+		position: absolute;
+		top: -500px;
+		left: 25px;
+		width: 220px;
+		margin: 0px;
+		padding: 10px;
+		font-size:15px;
+		color: black;
+		font-weight: normal;
+		background: white;
+		text-align: justify;
+		border: 2px solid #666;
+		border-radius:20px;
+		}
+	#popup.dest4 a:hover span img{
+		height:200px;
+		width:200px;
+		}
+	@font-face {
+	  font-family: 'Glyphicons Halflings';
+	  src: url('fonts/glyphicons-halflings-regular.eot');
+	  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+		}		
+	</style>
+
+<body>
+	<!--NavBar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a href="index.html" class="navbar-brand" id="icon">
+						<img src="images/Icon.jpg"/>
+					</a>
+				</div><!-- Navbar Header--> 
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+				<a href="login.html" class="btn btn-info navbar-btn navbar-right">Login</a>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span><span> Home</span></a></li>
+						<li><a href="tof.html"><span class="glyphicon glyphicon-bed"></span><span> Trips/Fares</span></a></li>
+						<li><a href="custser.html"><span class="glyphicon glyphicon-phone-alt"></span><span> Customer Service</span></a></li>
+						<li><a href="aboutus.html"><span class="glyphicon glyphicon-eye-open"></span><span> About Us</span></a></li>
+					</ul>
+				</div>
+			</div><!-- End Container-->
+		</nav><!--End Navbar-->
+		
+		<div id="bg">
+			<table>
+		<tr>
+		<td>
+			<div id="map"><h3>GB Express Route Map</h3>
+			<h4 id="popup" class="dest1"><a><span><img src="images/baguio.gif"/>Baguio, officially the City of Baguio and often referred to as Baguio City, is a highly urbanized city located in the province of Benguet in northern Luzon island of the Philippines.</span></a></h4><br><br><br><br><br>
+			<h4 id="popup" class="dest2"><a><span><img src="images/manila.gif"/>Manila's moniker, the 'Pearl of the Orient', couldn't be more apt, its cantankerous shell reveals its jewel only to those resolute enough to pry. No stranger to hardship, the city has endured every disaster both human and nature could throw at it, and yet today the chaotic metropolis thrives as a true Asian megacity. </span></a></h4>
+			<h4 id="popup" class="dest3"><a><span><img src="images/batangas.gif"/>BATANGAS is endowed with destinations encompassing various natures from natural to man-made, from preserved greatness of the bygone era to modernistic structures, from places where you can seek refuge to sites where one can be lavished with paramount Epicurean treat.</span></a></h4>
+			<h4 id="popup" class="dest4"><a><span><img src="images/bicol.gif"/>"Bicolandia" is made up the provinces of Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes and Masbate. You can find it at the southern tip of the island of Luzon. Bicol is one of the Philippines' best-known tourist destinations.</span></a></h4>
+			</div>
+		</tr>
+		</td>
+		</table>	
+		</div>
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="bootstrap.js"></script>
+</body>

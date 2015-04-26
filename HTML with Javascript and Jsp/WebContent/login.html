@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>GB Express</title>
+	<meta name="description" content="Bootstrap App">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+				
+</head>
+
+	<style>
+	#my-navbar{
+		padding-top:10px;
+		}
+	.navbar-brand{
+		padding-top:5px;
+		}
+	div#text{
+		margin-left:300px;
+		margin-top:-150px;
+		color:#2c3e50;
+		font-size:30px;
+		background-color:#bdc3c7;
+		border-radius:10px;
+		}
+	div#login{
+		background-color:#ecf0f1;
+		border-radius:25px;
+		margin-top:200px;
+		margin-left:500px;
+		margin-bottom:70px;
+		margin-right:500px;
+		padding:10px;
+		}
+	body{
+		width:100%;
+		background-image:url('images/bg.gif');height:100%;  
+		background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+		background-size:cover;
+		}
+	.radius{
+		border-radius:10px;
+		}
+	@font-face {
+	  font-family: 'Glyphicons Halflings';
+	  src: url('fonts/glyphicons-halflings-regular.eot');
+	  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+	}		
+	</style>
+
+<body>
+	<!--NavBar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a href="index.html" class="navbar-brand" id="icon">
+						<img src="images/Icon.jpg"/>
+					</a>
+				</div><!-- Navbar Header--> 
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+				<a href="login.html" class="btn btn-info navbar-btn navbar-right">Login</a>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span><span> Home</span></a></li>
+						<li><a href="tof.html"><span class="glyphicon glyphicon-bed"></span><span> Trips/Fares</span></a></li>
+						<li><a href="custser.html"><span class="glyphicon glyphicon-phone-alt"></span><span> Customer Service</span></a></li>
+						<li><a href="aboutus.html"><span class="glyphicon glyphicon-eye-open"></span><span> About Us</span></a></li>
+					</ul>
+				</div>
+			</div><!-- End Container-->
+		</nav><!--End Navbar-->
+		
+			<div class="conatainer" id="bg">
+							<div id="login">
+								<center><h3>Login</h3></center>				
+						<form name="registerform" action="logged.html" onsubmit="return validateform()">
+							<center><p>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input required type="text" placeholder="First Name" class="radius" name="fname"></p>
+							<p><center>Password: <input required type="password" placeholder="Last Name" name="lname" class="radius"></center></p><br>
+							<center><button type="submit" class="btn btn-success">Login</button></center>
+							<hr>
+						</form>
+							</div>
+			</div>
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="bootstrap.js"></script>
+</body>

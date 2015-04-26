@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>GB Express</title>
+	<meta name="description" content="Bootstrap App">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-theme.min.css">
+				<script type="text/javascript">  
+				function validateform(){  
+				var fname=document.registerform.fname.value;
+				var lname=document.registerform.lname.value;  
+				var email=document.registerform.email.value;  
+				var cp=document.registerform.cp.value;  
+				var tel=document.registerform.tel.value;  
+				var password=document.registerform.password.value;  
+				var secondpassword=document.registerform.password2.value; 
+				
+				if(!isNaN(fname)){
+					alert("Your first name cannot be a number!");
+					}
+					
+				if(!isNaN(lname)){
+					alert("Your last name cannot be a number!");
+					}
+				
+				if(isNaN(cp)){
+					alert("Please enter a valid Mobile Number.");
+					}
+					
+				if(isNaN(tel)){
+					alert("Please enter a valid Telephone Number.");
+					}
+ 
+				if(password.length<6){  
+					alert("Password should contain at least 6 characters.");
+					document.getElementById("passloc").innerHTML="<img src='images/unchecked.gif'/>";
+					return false;  
+					}
+					
+				else if(password!=secondpassword){ 
+					alert("Password must be the same!");
+					document.getElementById("pass2loc").innerHTML="<img src='images/unchecked.gif'/>";
+					return false;  
+					}	
+					
+				if ((registerform.sex[0].checked==false)&&(registerform.sex[1].checked==false)){
+					alert ( "Please choose your Gender."); 
+					return false;
+					}	
+				}	
+			</script>
+			<script>
+				function validate(){
+				var password=document.registerform.password;  
+				var secondpassword=document.registerform.password2; 	
+						if (password.value.length>=6){
+						document.getElementById("passloc").innerHTML="<img src='images/checked.gif'/>";
+						status=true;
+						}
+					
+					if (password.value==secondpassword.value){
+						document.getElementById("pass2loc").innerHTML="<img src='images/checked.gif'/>";
+						status=true;
+						}
+				}		 
+			</script>
+</head>
+
+	<style>
+	#my-navbar{
+		padding-top:10px;
+		}
+	.navbar-brand{
+		padding-top:5px;
+		}
+	div#text{
+		margin-left:300px;
+		margin-top:-150px;
+		color:#2c3e50;
+		font-size:30px;
+		background-color:#bdc3c7;
+		border-radius:10px;
+		}
+	div#signup{
+		background-color:#ecf0f1;
+		border-radius:25px;
+		margin-top:150px;
+		margin-left:200px;
+		margin-bottom:70px;
+		margin-right:144px;
+		padding:10px;
+		}
+	body{
+		width:100%;
+		background-image:url('images/bg.gif');height:100%;  
+		background-repeat:no-repeat;/*we want to have one single image not a repeated one*/  
+		background-size:cover;
+		}
+	.radius{
+		border-radius:10px;
+		}
+	table{
+		margin-top:50px;
+		}
+	#contact{
+		border-radius:15px;
+		background-color:#bdc3c7;
+		margin-left: 300px;
+		margin-top: 50px;
+		padding:5px;
+		}
+	#contact a{
+		text-decoration:none;
+		color:black;
+		}
+	#contact img{
+		height:30px;
+		width:30px;
+		}
+	@font-face {
+	  font-family: 'Glyphicons Halflings';
+	  src: url('fonts/glyphicons-halflings-regular.eot');
+	  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+	}		
+	</style>
+
+<body>
+<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<!--NavBar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a href="index.html" class="navbar-brand" id="icon">
+						<img src="images/Icon.jpg"/>
+					</a>
+				</div><!-- Navbar Header--> 
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+			
+				<a href="login.html" class="btn btn-info navbar-btn navbar-right">Login</a>
+					<ul class="nav navbar-nav">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home"></span><span> Home</span></a></li>
+						<li><a href="tof.html"><span class="glyphicon glyphicon-bed"></span><span> Trips/Fares</span></a></li>
+						<li><a href="custser.html"><span class="glyphicon glyphicon-phone-alt"></span><span> Customer Service</span></a></li>
+						<li><a href="aboutus.html"><span class="glyphicon glyphicon-eye-open"></span><span> About Us</span></a></li>
+					</ul>
+				</div>
+			</div><!-- End Container-->
+		</nav><!--End Navbar-->
+		
+		<div id="bg">
+			<table>
+				<tr>
+					<td>
+						<div id="text">
+							<span>Welcome to GB Express!</span><br>
+						</div>
+						<div id="contact">
+							<a href="https://facebook.com/GBGBExpress?fref=ts"><img src="images/facebook_logo.png" id="pad"/> Like us on Facebook</a><br>
+							<a href=""><img src="images/email_logo.png" id="pad"/> Get Email Updates</a><br>
+							<a href="https://twitter.com/GbExpress113"><img src="images/twitter_logo.png" id="pad"/> Follow us on Twitter</a>
+						</div>
+					</td>
+					<td>
+							<div id="signup">
+								<h3><center>Create New Account</center></h3>						
+						<form name="registerform" action="" onsubmit="return validateform()">
+							<p><center><input required type="text" placeholder="First Name" class="radius" name="fname"></span><input required type="text" placeholder="Last Name" name="lname" class="radius"></center></p>
+							<p><center><input required type="text" placeholder="Email" size="45" name="email" class="radius"><center></p>
+							<p><center><input required type="text" placeholder="Mobile Number" size="45" onkeypress="return isNumberKey(event)" name="cp" class="radius"></center></pre></p>
+							<p><center><input required type="text" placeholder="Telephone Number" size="45" name="tel" onkeypress="return isNumberKey(event)" class="radius"></center></pre></p>
+							<p><input required type="password" placeholder="Password" size="40" name="password" class="radius" onkeyup="validate()"> <span id="passloc"></span></center></pre></p>
+							<p><input required type="password" placeholder="Confirm Password" size="40" name="password2" class="radius" onkeyup="validate()"> <span id="pass2loc"></span></center></pre></p>	
+							<p><input type="number" required name="number" id="number" placeholder="Age" name="age" onkeypress="return isNumberKey(event)" class="radius">   <input type="radio" name="sex" value="male">Male</center></pre></p>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" value="female">Female</pre></p>
+							<center><button type="submit" class="btn btn-success">Sign up</button></center>
+							<hr>
+						</form>
+							</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="bootstrap.js"></script>
+</body>
